@@ -38,10 +38,10 @@ etiket_tagger = []
 
 
 #tektag
-@client.on(events.NewMessage(pattern="^/cancel"))
+@client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel(event):
-  global etiket_tagger
-  etiket_tagger.remove(event.chat_id)
+  global gece_tag
+  gece_tag.remove(event.chat_id)
 
   
 # Başlanğıc Mesajı
